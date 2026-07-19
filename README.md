@@ -12,7 +12,11 @@ The **Sackin index** measures the imbalance (asymmetry) of a tree by summing the
 - **Leaves** are nodes with no children: every dataset (HDF5) / array (Zarr), plus any empty group.
 - A node's **depth** is the number of components in its path from the root (its number of ancestors).
 
-The raw index is normalized to roughly $[0, 1]$ with the min-max convention $S_{\text{norm}} = (S - S_{\min}) / (S_{\max} - S_{\min})$, so files of different sizes are comparable. For $n$ leaves, $S_{\max} = n(n + 1)/2 - 1$ is the caterpillar (most imbalanced) tree and $S_{\min} = n \lceil \log_2 n \rceil$ approximates a balanced tree. A file with a single leaf normalizes to $0.0$.
+The raw index is normalized to roughly $[0, 1]$ with the min-max convention, so files of different sizes are comparable:
+
+$$S_{\text{norm}} = \frac{S - S_{\min}}{S_{\max} - S_{\min}}$$
+
+For $n$ leaves, $S_{\max} = n(n + 1)/2 - 1$ is the caterpillar (most imbalanced) tree and $S_{\min} = n \lceil \log_2 n \rceil$ approximates a balanced tree. A file with a single leaf normalizes to $0.0$.
 
 Because $S_{\min}$ is the balanced *binary* tree approximation, a high-branching file — whose leaves sit shallower than they would in a binary tree — can produce a value slightly below $0$. The values are reported as-is, without clamping, so this convention stays transparent.
 
