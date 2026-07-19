@@ -6,21 +6,15 @@ The set of valid NWB files is taken from the [`content-id-to-valid-nwb-file`](ht
 
 ## What is computed
 
-The **Sackin index** measures the imbalance (asymmetry) of a tree by summing the depths of its leaves: `S = Σ d_i`, where `d_i` is the number of ancestors of leaf `i`. An NWB file is itself a tree — the file's own group/array structure — so it is used directly as the tree:
+The **Sackin index** measures the imbalance (asymmetry) of a tree by summing the depths of its leaves: $S = \sum_i d_i$, where $d_i$ is the number of ancestors of leaf $i$. An NWB file is itself a tree — the file's own group/array structure — so it is used directly as the tree:
 
 - **Internal nodes** are groups that contain children.
 - **Leaves** are nodes with no children: every dataset (HDF5) / array (Zarr), plus any empty group.
 - A node's **depth** is the number of components in its path from the root (its number of ancestors).
 
-The raw index is normalized to roughly `[0, 1]` with the min-max convention, so files of different sizes are comparable:
+The raw index is normalized to roughly $[0, 1]$ with the min-max convention $S_{\text{norm}} = (S - S_{\min}) / (S_{\max} - S_{\min})$, so files of different sizes are comparable. For $n$ leaves, $S_{\max} = n(n + 1)/2 - 1$ is the caterpillar (most imbalanced) tree and $S_{\min} = n \lceil \log_2 n \rceil$ approximates a balanced tree. A file with a single leaf normalizes to $0.0$.
 
-```
-S_norm = (S - S_min) / (S_max - S_min)
-```
-
-where, for `n` leaves, `S_max = n(n + 1)/2 - 1` is the caterpillar (most imbalanced) tree and `S_min = n * ceil(log2(n))` approximates a balanced tree. A file with a single leaf normalizes to `0.0`.
-
-Because `S_min` is the balanced *binary* tree approximation, a high-branching file — whose leaves sit shallower than they would in a binary tree — can produce a value slightly below `0`. The values are reported as-is, without clamping, so this convention stays transparent.
+Because $S_{\min}$ is the balanced *binary* tree approximation, a high-branching file — whose leaves sit shallower than they would in a binary tree — can produce a value slightly below $0$. The values are reported as-is, without clamping, so this convention stays transparent.
 
 Each line of the derivatives is a JSON object of the form:
 
