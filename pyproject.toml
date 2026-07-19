@@ -43,3 +43,7 @@ fixable = ["ALL"]
 
 [tool.ruff.lint.isort]
 relative-imports-order = "closest-to-furthest"
+
+[tool.codespell]
+# "Sackin" is a proper name (the Sackin tree-imbalance index), not a misspelling of "sacking".
+ignore-words-list = "sackin"
