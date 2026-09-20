@@ -1,0 +1,4 @@
+2026-09-20T15:30:46Z INFO Logging to /tmp/logs/update_2026-09-20T15-30-46Z.log.
+2026-09-20T15:30:46Z INFO Update valid-nwb-file-to-sackin-index (base directory /tmp).
+2026-09-20T15:30:46Z INFO Processing 0 items (51767 already recorded).
+2026-09-20T15:30:47Z INFO Wrote 51767 records to /tmp/derivatives/valid_nwb_file_to_sackin_index.jsonl (0 new, 0 failed) in 0.0 min (peak memory 37 MiB).
