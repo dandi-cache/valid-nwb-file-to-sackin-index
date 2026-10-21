@@ -1,0 +1,5 @@
+2026-10-21T07:54:56Z INFO Logging to /tmp/logs/update_2026-10-21T07-54-56Z.log.
+2026-10-21T07:54:56Z INFO Update valid-nwb-file-to-sackin-index (base directory /tmp).
+2026-10-21T07:54:58Z INFO Processing 0 items (171510 already recorded).
+2026-10-21T07:54:58Z INFO Wrote 171510 records to /tmp/derivatives/valid_nwb_file_to_sackin_index.zarr (0 new, 0 failed) in 0.0 min (peak memory 178 MiB).
+2026-10-21T07:54:58Z INFO Progress: 171,486 of 171,486 candidates recorded (100.0%).
