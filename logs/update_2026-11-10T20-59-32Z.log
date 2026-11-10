@@ -1,0 +1,27 @@
+2026-11-10T20:59:32Z INFO Logging to /tmp/logs/update_2026-11-10T20-59-32Z.log.
+2026-11-10T20:59:32Z INFO Update valid-nwb-file-to-sackin-index (base directory /tmp).
+2026-11-10T20:59:35Z INFO Processing 22 items (198631 already recorded).
+2026-11-10T20:59:37Z INFO [1/22] 0adaa79f-0c6d-4ee8-b287-f7f84fb7f53f: Sackin index -0.0594; 1.7 s; peak memory 204 MiB.
+2026-11-10T20:59:39Z INFO [2/22] 202c8880-b5fb-46b9-be79-713c7918f727: Sackin index -0.0392; 2.4 s; peak memory 204 MiB.
+2026-11-10T20:59:43Z INFO [3/22] 23015e99-59d8-47de-9145-96942c44233e: Sackin index -0.0397; 3.6 s; peak memory 204 MiB.
+2026-11-10T20:59:45Z INFO [4/22] 2fc59550-3531-416d-9e83-8293d6439ee5: Sackin index -0.0420; 2.4 s; peak memory 204 MiB.
+2026-11-10T20:59:49Z INFO [5/22] 31dc872b-203f-4897-ad1c-97052e582ce3: Sackin index -0.0435; 3.3 s; peak memory 204 MiB.
+2026-11-10T20:59:51Z INFO [6/22] 434cb437-094b-46d0-80f0-fe01c44faa62: Sackin index -0.0444; 2.6 s; peak memory 204 MiB.
+2026-11-10T20:59:55Z INFO [7/22] 51c0741b-470f-4cf4-bba1-892dd160e06b: Sackin index -0.0377; 3.9 s; peak memory 204 MiB.
+2026-11-10T20:59:58Z INFO [8/22] 56a7c230-24a0-4d65-b346-b080fd6941a5: Sackin index -0.0402; 3.5 s; peak memory 204 MiB.
+2026-11-10T21:00:11Z INFO [9/22] 6c41adeb-a77a-4fdc-b377-9c9fea1544a0: Sackin index -0.0709; 12.1 s; peak memory 204 MiB.
+2026-11-10T21:00:13Z INFO [10/22] 7c51d87c-d4c6-40e2-8c2d-d66368a5e419: Sackin index -0.0496; 2.1 s; peak memory 204 MiB.
+2026-11-10T21:00:17Z INFO [11/22] 8c12aceb-8da7-4f92-b9ca-7d7484774a5b: Sackin index -0.0372; 4.0 s; peak memory 204 MiB.
+2026-11-10T21:00:20Z INFO [12/22] 92ac7ee2-0ed1-4527-aa02-4c7ad641fd78: Sackin index -0.0426; 3.2 s; peak memory 204 MiB.
+2026-11-10T21:00:21Z INFO [13/22] 9460ea5c-0a21-4838-90fa-955a198b6d3c: Sackin index -0.0718; 1.3 s; peak memory 204 MiB.
+2026-11-10T21:00:23Z INFO [14/22] a1c47788-b802-471f-a8a1-240815fe3209: Sackin index -0.0723; 1.3 s; peak memory 204 MiB.
+2026-11-10T21:00:24Z INFO [15/22] a7e7f6b3-7820-488a-9647-4798b3113334: Sackin index -0.0640; 1.1 s; peak memory 204 MiB.
+2026-11-10T21:00:28Z INFO [16/22] b25dac95-d0b6-4c45-b672-050392549c41: Sackin index -0.0386; 4.0 s; peak memory 204 MiB.
+2026-11-10T21:00:30Z INFO [17/22] c637c151-4d5c-4ee1-968d-849110d3f690: Sackin index -0.0425; 2.7 s; peak memory 204 MiB.
+2026-11-10T21:00:33Z INFO [18/22] d235a5f1-48fc-49a5-9182-3b10f170c63a: Sackin index -0.0425; 2.4 s; peak memory 204 MiB.
+2026-11-10T21:00:41Z INFO [19/22] dc823b83-6e9e-413b-ba4e-e79e8a34227e: Sackin index -0.0709; 8.0 s; peak memory 204 MiB.
+2026-11-10T21:00:45Z INFO [20/22] e690f8a8-7ea1-4ba7-97ea-4dac97249309: Sackin index -0.0372; 3.9 s; peak memory 204 MiB.
+2026-11-10T21:00:46Z INFO [21/22] e756d30e-dfd7-4d69-a866-1b2e1b0b7c89: Sackin index -0.0723; 1.4 s; peak memory 204 MiB.
+2026-11-10T21:00:50Z INFO [22/22] fdde6e9d-ae21-457a-b45e-0bc5effe56a8: Sackin index -0.0418; 3.8 s; peak memory 204 MiB.
+2026-11-10T21:00:50Z INFO Wrote 198653 records to /tmp/derivatives/valid_nwb_file_to_sackin_index.zarr (22 new, 0 failed) in 1.2 min (peak memory 281 MiB).
+2026-11-10T21:00:50Z INFO Progress: 198,600 of 198,600 candidates recorded (100.0%).
